@@ -25,3 +25,4 @@ dist-ssr
 
 # not sending node_modlues folder.
 node_modules/
+assets/

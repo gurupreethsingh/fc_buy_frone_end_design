@@ -1,0 +1,96 @@
+/* Reset CSS to eliminate default margins and paddings */
+*,
+*::before,
+*::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+/* Ensure the body and html take up the full height, but allow vertical scrolling */
+html,
+body {
+      min-height: 100%;
+      margin: 0;
+      padding: 0;
+      max-width: 100vw;
+      /* Prevent any content from exceeding viewport width */
+      overflow-x: hidden;
+      /* Hide horizontal scrollbar */
+      font-family: Arial, sans-serif;
+      /* Default font family */
+}
+
+/* Root container takes up full height and allows scrolling if content exceeds viewport */
+#root {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      /* Ensure content stretches to the full height of the viewport */
+      overflow-y: auto;
+      /* Enable vertical scrolling for long pages */
+}
+
+/* Ensure containers and grid elements don't overflow horizontally */
+.container {
+      width: 100%;
+      overflow: hidden;
+      /* Prevent horizontal scroll */
+      padding: 1rem;
+      /* Add padding if needed */
+}
+
+/* Example banner with full width */
+.TopBanner {
+      width: 100%;
+      background-color: #ff80b5;
+      /* Replace with your desired background */
+      color: white;
+      padding: 1rem;
+      text-align: center;
+}
+
+/* Responsive grid for restaurant cards */
+.grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      /* Flexible grid */
+      gap: 1rem;
+      padding: 1rem;
+}
+
+/* Images and media should scale properly */
+img,
+video {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      /* Make images cover the container without stretching */
+}
+
+/* Hide horizontal scrollbars */
+::-webkit-scrollbar {
+      display: none;
+}
+
+* {
+      scrollbar-width: none;
+      /* For Firefox */
+      -ms-overflow-style: none;
+      /* For Internet Explorer and Edge */
+}
+
+/* Media queries to handle smaller devices */
+@media (max-width: 768px) {
+      body {
+            font-size: 0.9rem;
+            /* Adjust font size for tablets */
+      }
+}
+
+@media (max-width: 480px) {
+      body {
+            font-size: 0.8rem;
+            /* Adjust font size for mobile */
+      }
+}
