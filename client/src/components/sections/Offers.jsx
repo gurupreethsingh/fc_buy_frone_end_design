@@ -1,5 +1,5 @@
 import React from "react";
-import oranges from "../../assets/oranges.jpg"; // Import your image
+import grapes from "../../assets/grapes.jpg"; // Import your image
 
 export default function Offers() {
   return (
@@ -15,7 +15,7 @@ export default function Offers() {
         <div className="md:w-1/3">
           <img
             className="object-cover w-full h-auto rounded-xl shadow transition-transform duration-300 hover:scale-105 hover:shadow-lg"
-            src={oranges}
+            src={grapes}
             alt="Person"
           />
         </div>

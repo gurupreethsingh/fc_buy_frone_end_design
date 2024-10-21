@@ -1,6 +1,6 @@
 import React from "react";
 import { FaSearch, FaUserAlt } from "react-icons/fa";
-import logo from "../../assets/logo-removebg.png"; // Replace with your logo import
+import logo from "../../assets/fcbuy-logo-removebg.png"; // Replace with your logo import
 
 const Header = () => {
   return (

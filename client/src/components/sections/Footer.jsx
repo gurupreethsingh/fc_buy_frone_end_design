@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/logo-removebg.png";
+import logo from "../../assets/fcbuy-logo-removebg.png";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa"; // Importing icons
 
 const Footer = () => {

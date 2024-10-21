@@ -1,44 +1,44 @@
 import React, { useState, useMemo } from "react";
-import berries from "../../assets/berries.jpg";
-import kiwi from "../../assets/kiwi.jpg";
+import barries from "../../assets/barries.jpg";
+import apples from "../../assets/apples.jpg";
 import grapes from "../../assets/grapes.jpg";
-import lemon from "../../assets/lemon.jpg";
-import more_beries from "../../assets/more_beries.jpg";
+import green_apple from "../../assets/green_apple.jpg";
+import oat_meal from "../../assets/oat_meal.jpg";
 import salad from "../../assets/salad.jpg";
-import oranges from "../../assets/oranges.jpg";
-import strawberries from "../../assets/strawberries.jpg";
+import grains from "../../assets/grains.jpg";
+import banana from "../../assets/banana.jpg";
 
 const topRestaurants = [
-  { name: "McDonald's", image: berries, discount: "₹179", time: "40-45 mins" },
-  { name: "Burger King", image: kiwi, discount: "60% OFF", time: "40-45 mins" },
+  { name: "McDonald's", image: barries, discount: "₹179", time: "40-45 mins" },
+  { name: "Burger King", image: apples, discount: "60% OFF", time: "40-45 mins" },
   {
     name: "La Pino'z Pizza",
     image: grapes,
     discount: "₹120",
     time: "30-35 mins",
   },
-  { name: "Polar Bear", image: lemon, discount: "20% OFF", time: "30-35 mins" },
-  { name: "Ibaco", image: oranges, discount: "₹50", time: "30-35 mins" },
+  { name: "Polar Bear", image: green_apple, discount: "20% OFF", time: "30-35 mins" },
+  { name: "Ibaco", image: banana, discount: "₹50", time: "30-35 mins" },
   {
     name: "Daily Kitchen",
-    image: strawberries,
+    image: oat_meal,
     discount: "₹129",
     time: "20-30 mins",
   },
-  { name: "Ibaco", image: more_beries, discount: "₹50", time: "30-35 mins" },
+  { name: "Ibaco", image: grains, discount: "₹50", time: "30-35 mins" },
   { name: "Daily Kitchen", image: salad, discount: "₹129", time: "20-30 mins" },
-  { name: "Burger King", image: kiwi, discount: "60% OFF", time: "40-45 mins" },
+  { name: "Burger King", image: apples, discount: "60% OFF", time: "40-45 mins" },
   {
     name: "La Pino'z Pizza",
     image: grapes,
     discount: "₹120",
     time: "30-35 mins",
   },
-  { name: "Polar Bear", image: lemon, discount: "20% OFF", time: "30-35 mins" },
-  { name: "Ibaco", image: oranges, discount: "₹50", time: "30-35 mins" },
+  { name: "Polar Bear", image: grains, discount: "20% OFF", time: "30-35 mins" },
+  { name: "Ibaco", image: grapes, discount: "₹50", time: "30-35 mins" },
   {
     name: "Daily Kitchen",
-    image: strawberries,
+    image: oat_meal,
     discount: "₹129",
     time: "20-30 mins",
   },

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import oranges from "../../assets/oranges.jpg";
-import kiwi from "../../assets/kiwi.jpg";
+import apples from "../../assets/apples.jpg";
+import barries from "../../assets/barries.jpg";
 import salad from "../../assets/salad.jpg"; // Import additional images
 
 const offers = [
@@ -8,14 +8,14 @@ const offers = [
     title: "Diwali Special",
     description:
       "Enjoy up to 50% off on your favorite products this festive season. Gravida quam mi erat tortor neque molestie.",
-    image: oranges,
+    image: apples,
     tagline: "Festival Offers",
   },
   {
     title: "Winter Clearance",
     description:
       "Auctor aliquet at porttitor a enim nunc suscipit tincidunt nunc. Get warm with our winter collection.",
-    image: kiwi,
+    image: barries,
     tagline: "Limited Time Deals",
   },
   {

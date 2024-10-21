@@ -1,27 +1,27 @@
 import { useRef, useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import berries from "../../assets/berries.jpg";
-import kiwi from "../../assets/kiwi.jpg";
+import barries from "../../assets/barries.jpg";
+import apples from "../../assets/apples.jpg";
 import grapes from "../../assets/grapes.jpg";
-import lemon from "../../assets/lemon.jpg";
-import more_beries from "../../assets/more_beries.jpg";
+import green_apple from "../../assets/green_apple.jpg";
+import oat_meal from "../../assets/oat_meal.jpg";
 import salad from "../../assets/salad.jpg";
-import oranges from "../../assets/oranges.jpg";
-import strawberries from "../../assets/strawberries.jpg";
+import grains from "../../assets/grains.jpg";
+import banana from "../../assets/banana.jpg";
 
 const categories = [
-  { name: "Samosa", image: berries, link: "/category/samosa" },
-  { name: "Pasta", image: kiwi, link: "/category/pasta" },
+  { name: "Berries", image: barries, link: "/category/samosa" },
+  { name: "Apples", image: apples, link: "/category/pasta" },
   { name: "Paratha", image: grapes, link: "/category/paratha" },
-  { name: "Pure Veg", image: lemon, link: "/category/pure-veg" },
-  { name: "Ice-Cream", image: more_beries, link: "/category/ice-cream" },
+  { name: "Green Apple", image: green_apple, link: "/category/pure-veg" },
+  { name: "Ice-Cream", image: oat_meal, link: "/category/ice-cream" },
   { name: "Salad", image: salad, link: "/category/salad" },
-  { name: "Kebabs", image: berries, link: "/category/kebabs" },
-  { name: "Pastry", image: oranges, link: "/category/pastry" },
+  { name: "Kebabs", image: barries, link: "/category/kebabs" },
+  { name: "Pastry", image: grains, link: "/category/pastry" },
   { name: "Shawarma", image: salad, link: "/category/shawarma" },
-  { name: "Noodles", image: lemon, link: "/category/noodles" },
-  { name: "Idli", image: strawberries, link: "/category/idli" },
-  { name: "Shake", image: berries, link: "/category/shake" },
+  { name: "Oat Meal", image: oat_meal, link: "/category/noodles" },
+  { name: "Idli", image: banana, link: "/category/idli" },
+  { name: "Shake", image: barries, link: "/category/shake" },
 ];
 
 export default function CategorySlider() {

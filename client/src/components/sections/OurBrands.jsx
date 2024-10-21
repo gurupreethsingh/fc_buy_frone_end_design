@@ -1,13 +1,14 @@
 import React from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import berries from "../../assets/berries.jpg";
-import kiwi from "../../assets/kiwi.jpg";
+import berries from "../../assets/barries.jpg";
+import kiwi from "../../assets/apples.jpg";
 import grapes from "../../assets/grapes.jpg";
-import lemon from "../../assets/lemon.jpg";
-import more_beries from "../../assets/more_beries.jpg";
+import lemon from "../../assets/green_apple.jpg";
+import more_beries from "../../assets/oat_meal.jpg";
 import salad from "../../assets/salad.jpg";
-import oranges from "../../assets/oranges.jpg";
-import strawberries from "../../assets/strawberries.jpg";
+import oranges from "../../assets/grains.jpg";
+import strawberries from "../../assets/banana.jpg";
+
 
 const images = [
   { src: more_beries, alt: "More Berries" },
