@@ -3,6 +3,10 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors = require('cors');
 
+// import all the routes. 
+const userRoutes = require("./routes/userRoutes");
+const productRoutes = require("./routes/productRoutes");
+
 // Load environment variables from .env file
 dotenv.config();
 
@@ -34,8 +38,6 @@ connectDB();
 app.get('/', (req, res) => {
     res.send('API is running...');
   });
-
-
 
   // Error handling middleware (optional)
 app.use((err, req, res, next) => {
