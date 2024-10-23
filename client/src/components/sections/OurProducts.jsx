@@ -69,7 +69,7 @@ const RestaurantCard = React.memo(({ restaurant }) => {
   );
 });
 
-export default function OnlineShops() {
+export default function OurProducts() {
   const [showMore, setShowMore] = useState(false);
 
   const handleShowMore = () => {

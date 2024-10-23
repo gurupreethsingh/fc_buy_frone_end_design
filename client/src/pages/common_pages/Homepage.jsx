@@ -9,6 +9,7 @@ import Footer from "../../components/sections/Footer";
 import BestItems from "../../components/sections/BestItems";
 import BestSellers from "../../components/sections/BestSellers";
 import TopSellers from "../../components/sections/TopSellers";
+import OurProducts from "../../components/sections/OurProducts";
 
 export default function Homepage() {
   return (
@@ -20,19 +21,12 @@ export default function Homepage() {
       {/* Category Slider */}
       <CategorySlider />
 
-      {/* Top Restaurants Section */}
-      {/* <RestaurantGrid /> */}
 
-      {/*online shop sections */}
-      <OnlineShops />
+      <OurProducts />
 
       <Offers />
 
       <OurBrands />
-
-      {/* <BestItems />
-
-      <BestSellers /> */}
 
       <NewsLetter />
 
