@@ -1,16 +1,21 @@
 import React from "react";
 import logo from "../../assets/fcbuy-logo-removebg.png";
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa"; // Importing icons
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <div>
       {/* Footer Section */}
-      <footer className="bg-white py-12">
+      <footer className="bg-white py-8 sm:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div>
-              <img src={logo} alt="Logo" className="h-10 w-auto mb-2" />
+            {/* Logo Section: Center on mobile, left-align on larger screens */}
+            <div className="text-left">
+              <img
+                src={logo}
+                alt="Logo"
+                className="h-10 w-auto mb-2 sm:mx-0" // Centered on mobile (mx-auto), left-aligned on desktop (sm:mx-0)
+              />
               <p className="text-gray-900 pr-3">
                 Leading the way in software excellence and innovation.
                 Harnessing the power of AI and blockchain technologies to
@@ -18,6 +23,8 @@ const Footer = () => {
                 solutions.
               </p>
             </div>
+
+            {/* Academics Section */}
             <div>
               <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase text-center">
                 Academics
@@ -57,6 +64,8 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
+
+            {/* Community Section */}
             <div>
               <h3 className="text-sm text-center font-semibold text-gray-900 tracking-wider uppercase">
                 Community
@@ -96,11 +105,13 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
+
+            {/* Contact Us Section */}
             <div>
-              <h3 className="text-sm text-center font-semibold text-gray-900 tracking-wider uppercase">
+              <h3 className="text-sm text-center  font-semibold text-gray-900 tracking-wider uppercase">
                 Contact Us
               </h3>
-              <ul className="mt-4 space-y-4 text-center">
+              <ul className="mt-4 space-y-4 text-center ">
                 <li>
                   <a
                     href="#"
@@ -129,12 +140,14 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="mt-8  border-t border-b border-gray-300 pt-4 pb-4 text-center text-sm text-gray-700 flex justify-between items-center">
+
+          {/* Footer Bottom Section */}
+          <div className="mt-8 border-t border-b border-gray-300 pt-4 pb-4 text-center text-sm text-gray-700 flex flex-col sm:flex-row justify-between items-center">
             <p className="text-base">
               &copy; 2024 First Circle Build Mart. All rights reserved.
               Developed by Ecoders.
             </p>
-            <div className="flex space-x-6">
+            <div className="flex space-x-6 mt-4 sm:mt-0"> {/* Added margin-top on mobile */}
               {/* Social Media Icons */}
               <a href="#" className="text-gray-900 hover:text-orange-500">
                 <FaFacebook className="h-6 w-6" />
@@ -157,3 +170,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+

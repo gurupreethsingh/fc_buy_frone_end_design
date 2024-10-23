@@ -8,17 +8,20 @@ import NewsLetter from "../../components/sections/NewsLetter";
 import Footer from "../../components/sections/Footer";
 import BestItems from "../../components/sections/BestItems";
 import BestSellers from "../../components/sections/BestSellers";
+import TopSellers from "../../components/sections/TopSellers";
 
 export default function Homepage() {
   return (
     <div>
       {/* Banner */}
 
+      <TopSellers />
+
       {/* Category Slider */}
       <CategorySlider />
 
       {/* Top Restaurants Section */}
-      <RestaurantGrid />
+      {/* <RestaurantGrid /> */}
 
       {/*online shop sections */}
       <OnlineShops />
@@ -27,9 +30,9 @@ export default function Homepage() {
 
       <OurBrands />
 
-      <BestItems />
+      {/* <BestItems />
 
-      <BestSellers />
+      <BestSellers /> */}
 
       <NewsLetter />
 
