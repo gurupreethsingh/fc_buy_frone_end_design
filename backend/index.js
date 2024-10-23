@@ -13,6 +13,9 @@ const app = express();
 app.use(cors()); // Enable Cross-Origin Resource Sharing (CORS)
 app.use(express.json()); // Parse incoming requests with JSON payloads
 
+// Routes
+app.use('/api/users', userRoutes);
+app.use('/api/products' , productRoutes);
 
 const connectDB = async () => {
     try {
@@ -27,12 +30,22 @@ const connectDB = async () => {
   // Call the connectDB function
 connectDB();
 
-
 // Sample route
 app.get('/', (req, res) => {
     res.send('API is running...');
   });
 
+
+
+  // Error handling middleware (optional)
+app.use((err, req, res, next) => {
+    const statusCode = res.statusCode === 200 ? 500 : res.statusCode;
+    res.status(statusCode);
+    res.json({
+      message: err.message,
+      stack: process.env.NODE_ENV === 'production' ? null : err.stack,
+    });
+  });
 
   // Start server
 const PORT = process.env.PORT || 3002;
